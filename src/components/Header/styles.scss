@@ -1,0 +1,151 @@
+.headerPage{
+    position: relative;
+    border-bottom: 1px solid #cccccc63;
+
+    .headerPage__news{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #fff;
+        background-color: var(--main-color);
+        padding: 5px 0;
+        font-weight: 400;
+    }
+
+    .headerPage__select{
+        height: 60px;
+        .header__container{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6px;
+        }
+
+        .logo{
+            width: 25%;
+            display: flex;
+            cursor: pointer;
+
+            p{
+                color: #FF004D;
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            span{
+                color: #fc7da1;
+                font-size: 20px;
+                font-weight: 450;
+                position: relative;
+                top: 18px;
+                left: 3px;
+            }
+        }
+
+        .logo:hover{
+            p{
+                color: #fc4a7c;
+                
+            }
+
+            span{
+                color: #fc6590;
+            }
+        }
+
+        .search{
+            border: 1px solid rgb(173, 164, 183);
+            width: 50%;
+            height: 40px;
+            display: flex;
+            margin-top: 5px;
+
+            input{
+                width: 100%;
+                border: none;
+                padding: 0 5px;
+            }
+
+            .search-icon{
+                background-color: var(--main-color);
+                color: #fff;
+                position: relative;
+                padding: 8px 15px;
+                cursor: pointer;
+            }
+
+            .search-icon:hover{
+                background-color: var(--hover-color);
+            }
+        }
+
+        .acc__cart{
+            cursor: pointer;
+            display: flex;
+            width: 25%;
+            justify-content: space-evenly;
+            position: relative;
+            top: 8px;    
+            right: -10px;  
+            color: #474444;
+            .account{
+                display: flex;
+                p{
+                    position: relative;
+                    top: 10px;
+                    margin-left: 5px;
+                }
+
+                .acc__icon{
+                    font-size: 40px;
+                }
+            }
+
+            .account:hover{
+                color: #828282;
+            }
+
+            .cart{
+                display: flex;
+                
+                p{
+                    position: relative;
+                    top: 10px;
+                    margin-left: 5px;
+                }
+
+                .cart__icon{
+                    font-size: 40px;
+                }
+            }
+
+            .cart:hover{
+                color: #828282;
+            }
+        }
+
+    }
+
+    .headerPage__menu{
+        height: 35px;
+        z-index: 3;
+        font-weight: 500;
+
+        .menu__list{
+            display: flex;
+            text-transform: uppercase;
+            line-height: 30px;
+            justify-content: space-evenly;
+
+            a{
+                color: var(--main-color);
+            }
+
+            .menu__items:hover > a{
+                color: var(--hover-color);
+            }
+        }
+
+        
+    }
+
+}

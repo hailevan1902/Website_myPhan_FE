@@ -1,0 +1,174 @@
+.footer{
+    background-color: var(--main-color);
+    
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+
+        .footer__logo{  
+            
+            width: 40%;
+            text-align: justify;
+            margin-top: 10px;
+
+            p{
+                color: var(--white-color);
+                font-size: 14px;
+                
+            }
+
+            .address__icon, .phone__icon , .email__icon{
+                color: var(--white-color);
+                font-size: 16px;
+                margin-right: 5px;
+            }
+
+            .logo{
+                width: 25%;
+                display: flex;
+    
+                p{
+                    color: #FF004D;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+    
+                span{
+                    color: #fc7da1;
+                    font-size: 20px;
+                    font-weight: 450;
+                    position: relative;
+                    top: 18px;
+                    left: 3px;
+                }
+            }
+
+            .intro{
+                margin-top: 10px;
+
+                p{
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+
+            .address{
+                display: flex;
+                margin-top: 10px;
+            }
+
+            .phone{
+                display: flex;
+                margin-top: 10px;
+            }
+
+            .email{
+                display: flex;
+                margin: 10px 0;
+            }
+
+        }
+
+        .footer__sales, .footer__brand, .footer__policy{
+            text-align: center;
+
+            p{
+                color: var(--white-color);
+                margin: 15px 0;
+                font-size: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            li{
+                padding: 10px 0;
+            }
+            
+            li:hover > a{
+                color: var(--hover-color);
+            }
+
+            a{
+                color: var(--white-color);
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            
+
+        }
+    }
+
+    .title__contact{
+        text-align: center;
+        color: var(--white-color);
+        padding-top: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        border-top: 1px solid #9b9b9b6e ;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        color: var(--white-color);
+        margin-top: 30px;
+
+        .social__media{
+            width: 40%;
+            text-align: center;
+
+            .social__media-icon{
+                svg{
+                    padding: 10px 15px;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+
+                svg:hover{
+                    color: #ccc;
+                }
+            }
+        }
+
+        .send__email{
+            width: 60%;
+            text-align: center;
+
+            .email__input{
+                margin-top: 10px;
+                
+                input{
+                    width: 50%;
+                    padding: 5px 5px;
+                    border-radius: 10px 0 0 10px;
+                    font-size: 15px;
+                }
+
+                button{
+                    padding: 7px 15px;
+                    background-color: var(--hover-color);
+                    color: var(--white-color);
+                }
+
+                button:hover{
+                    background-color: #cccccc8d;
+                }
+            }
+        }
+    }
+
+    .thanks{
+        text-align: center;
+        color: var(--white-color);
+        padding: 10px 0;
+
+        span{
+            color: #FF004D;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

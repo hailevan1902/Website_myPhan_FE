@@ -1,0 +1,93 @@
+.login2{
+    background: linear-gradient(#093028 , #237A57);
+    height: 80vh;
+
+
+.logo{
+    display: flex;
+}
+
+.login__form{
+    text-align: center ;
+    display: block;
+    transform: translateY(20%);
+    .login__title{
+        margin-top: 50px;
+        font-size: 30px;
+        color: #FF004DF0 ;
+        text-transform: uppercase;
+        font-weight: 500 ;
+    }
+
+    .form__center{
+        border: 1px solid rgb(214, 214, 214);
+        border-radius: 15px;
+        height: 550px;
+        margin: 0 30%;
+        background-color: #ffff;
+    }
+
+
+    .login__input{
+        .pass{
+            border: none;
+
+            input{
+                border: none;
+            }
+        }
+
+        .pass2{
+             margin-top: 30px;
+        }
+
+        .email{
+            margin: 50px 0 20px 0;
+            border: none;
+        }
+
+        .showPass{
+            position: absolute;
+            top: 158px;
+            right: 5px;
+            cursor: pointer;
+            color: rgb(160, 160, 160);
+        }
+
+        .showPass2{
+            cursor: pointer;
+            color: rgb(160, 160, 160);
+            position: absolute;
+            right: 5px;
+            top: 252px;
+        }
+
+        .showPass:hover{
+            color: #333;
+        }
+
+        .showPass2:hover{
+            color: #333;
+        }
+    }
+
+    .login__button{
+        .button__login{
+            background-color: #FF004DF0 ;
+            width: 80%;
+            font-size: 16px;
+            border-radius: 10px;
+            margin-top: 35px;
+            padding: 10px 0;
+        }
+
+        .button__login:hover{
+            background-color: #ff004cc8 ;
+        }
+    }
+
+    .register{
+        margin-top: 20px;
+    }
+}
+}
