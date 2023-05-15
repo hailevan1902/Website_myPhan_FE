@@ -539,7 +539,7 @@ function Home(props) {
                         <div className="hotnew__items">
                             <a href="#">
                                 <div className="date">
-                                    <p>08</p>
+                                    <p>28</p>
                                     <span>03/2023</span>
                                 </div>
 

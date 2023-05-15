@@ -10,7 +10,7 @@ import NotFound from './components/NotFound/notFound';
 import Home from './features/Home/home';
 import Product from './features/Product/product';
 import Detailproduct from './features/Product/components/detailproduct';
-
+import '@fontsource/roboto'
 
 
 function App() {
