@@ -84,20 +84,101 @@
             width: 25%;
             justify-content: space-evenly;
             position: relative;
-            top: 8px;    
+            top: 13px;    
             right: -10px;  
             color: #474444;
+
             .account{
-                display: flex;
-                p{
-                    position: relative;
-                    top: 10px;
-                    margin-left: 5px;
+                .acc__items{
+                    display: flex;
+
+                    p{
+                        position: relative;
+                        top: 5px;
+                        margin-left: 5px;
+                    }
+    
+                    .acc__icon{
+                        font-size: 30px;
+                    }
+
+                    .acc-hover{
+                        border: 1px solid #cccccc5d;
+                        border-radius: 5px;
+                        height: 130px ;
+                        width: 50%;
+                        position: absolute;
+                        top: 40px;
+                        background-color: var(--white-color);
+                        display: none;
+
+    
+    
+                        li{
+                            font-size: 16px;
+                            color: #333;
+                            display: block;
+                            width: 100%;
+
+                            a{
+                                width: 100%;
+                                display: block;
+                                padding: 10px 5px;
+                                color: #333;
+                            }
+
+                            a:hover{
+                                color: var(--hover-color);
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .btn-login{
+                            position: relative;
+                            top: 20px ;
+                            right: -50px;
+                            background-color: var(--main-color);
+                            color: var(--white-color);
+                            padding: 5px;
+                            border-radius: 5px;
+                        }
+
+                        .btn-login:hover{
+                            background-color: var(--hover-color);
+                        }
+                    }
+
+                    .acc-hover::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: -10px;
+                        left: 5px;
+                        z-index: 1;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid #ccc;
+                        
+                    }
+
+                    .acc-hover::after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: -15px;
+                        z-index: 1;
+                        border-bottom: 20px solid transparent;
+                        width: 100%;
+                        
+                    }
+
                 }
 
-                .acc__icon{
-                    font-size: 40px;
+
+                .acc__items:hover > .acc-hover{
+                    display: block;
                 }
+
             }
 
             .account:hover{
@@ -109,12 +190,25 @@
                 
                 p{
                     position: relative;
-                    top: 10px;
+                    top: 5px;
                     margin-left: 5px;
                 }
 
                 .cart__icon{
-                    font-size: 40px;
+                    font-size: 30px;
+                }
+
+                .cart__number{
+                    position: relative;
+                    padding: 2px 5px 2px 5px;
+                    height: 15px;
+                    border-radius: 10px;
+                    background-color: var(--logo-color);
+                    color: var(--white-color);
+                    font-weight: bold;
+                    font-size: 12px;
+                    right: -35px;
+                    top: -5px;
                 }
             }
 

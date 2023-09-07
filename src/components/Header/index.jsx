@@ -31,11 +31,26 @@ function Header(props) {
 
                     <div className="acc__cart">
                         <div className="account">
-                            <AccountCircle className='acc__icon'></AccountCircle>
-                            <p>HaiLeVan</p>
+                            <div className="acc__items">
+                                <AccountCircle className='acc__icon'></AccountCircle>
+
+
+                                <ul className="acc-hover">
+                                    <li>
+                                        <a href="#">Tài khoản của tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đơn hàng</a>
+                                    </li>
+                                    <a href="/login" className='btn-login'>Đăng xuất</a>
+                                </ul>
+                            </div>
                         </div>
 
+
+
                         <div className="cart">
+                            <div className='cart__number'>1</div>
                             <ShoppingCart className='cart__icon'></ShoppingCart>
                             <p>Giỏ hàng</p>
                         </div>

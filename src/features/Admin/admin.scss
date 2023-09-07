@@ -1,0 +1,177 @@
+.manage{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccccccb9;
+    
+    .manage__category{
+        padding: 0 20px;
+        width: 15%;
+        // background-image: linear-gradient(#f857a6, #ff5858);
+        background-color: var(--main-color);
+        color: #fff;
+
+        a{
+            color: #333;
+            font-size: 18px;
+            display: block;
+            color: #fff;
+            
+        }
+        .logo{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.183) ;
+        }
+
+        .manage-list{
+            margin: 10px 0px;
+            height: 100vh;
+            p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            ul{
+                margin-top: 20px;
+
+                li{
+                    margin: 10px 0;
+                    box-sizing: border-box;
+                    display: flex;
+                    padding: 5px 10px;
+                    cursor: pointer;
+
+                    a{
+                        padding: 10px;
+                        margin-left: 10px ;
+                        display: block;
+                        width: 100%;
+                    }
+
+                    svg{
+                        font-size: 30px;
+                        position: relative;
+                        top: 5px;
+                    }
+
+                }
+
+                li:hover{
+                    background-color: #cccccc5c;
+                     border-radius: 10px;
+                }
+
+            }
+        }
+    }
+
+    .manage__main{
+        border: 1px solid aqua;
+        width: 85%;
+
+        .header{
+            border: 1px solid #cccccc7c;
+            height: 70px;
+            line-height: 70px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+
+            .logo{
+                width: 20%;
+                font-size: 20px;
+                font-weight: bold;
+                color: #ff5858;
+            }
+
+            .search{
+                width: 50%;
+
+                input{
+                    padding: 10px 10px;
+                    width: 70%;
+                }
+            }
+
+            .acc{
+                position: relative;
+                svg{
+                    font-size: 30px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+    } 
+    
+    .container{
+        margin: 20px;
+        
+        .container-main{
+            
+            .detail-website{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+
+                .detail-items{
+                    width: 23%;
+                    padding: 10px;
+                    background-color: #fff;
+                    border-radius: 10px;
+    
+                    .flex{
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        .icon{
+                            padding: 10px 20px;
+                            position: relative;
+                            top: -25px;
+                            left: 10px;
+                            background-color: #FF0099;
+                            border-radius: 7px;
+    
+                            svg{
+                                font-size: 30px;
+                                position: relative;
+                                top: 5px;
+                                color: #fff;
+                            }
+                        }
+                        
+                        .detail{
+                            p{
+                                font-size: 15px;
+                                font-weight: 300;
+                                color: #313131;
+                            }
+    
+                            span{
+                                text-align: center;
+                                display: block;
+                                font-size: 40px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+    
+                    .percent{
+                        margin-top: 40px;
+                        font-weight: 200;
+                        border-top: 1px solid #cccccc5c ;
+                        padding: 10px 0 0 0;
+                        span{
+                            color: #41df46;
+                            font-weight: 500;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,44 @@
+.order{
+    height: 100vh;
+    
+    .container{
+        border: 1px solid #cccccc8c;
+        height: 100vh;
+        .title{
+            margin-top: 30px;
+            text-align: center;
+        }
+    
+        .main{
+            margin-top: 30px;
+            .table{
+                
+
+                .tb_item{
+                    margin: 0 auto;
+
+                    .btn-detail{
+                        background-color: var(--main-color);
+                        color: #fff;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                    }
+
+                    span{
+                        margin: 0 5px;
+                    }
+
+                    .btn-delete{
+                        background-color: var(--logo-color);
+                        border: none;
+                        padding: 5px 10px;
+                        color: #fff;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            
+        }
+
+    }
+}

@@ -1,0 +1,179 @@
+.manage-user{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccccccb9;
+    
+    .manage__category{
+        padding: 0 20px;
+        width: 15%;
+        // background-image: linear-gradient(#f857a6, #ff5858);
+        background-color: var(--main-color);
+        color: #fff;
+
+        a{
+            color: #333;
+            font-size: 18px;
+            display: block;
+            color: #fff;
+            
+        }
+        .logo{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.183) ;
+        }
+
+        .manage-list{
+            margin: 10px 0px;
+            height: 100vh;
+            p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            ul{
+                margin-top: 20px;
+
+                li{
+                    margin: 10px 0;
+                    box-sizing: border-box;
+                    display: flex;
+                    padding: 5px 10px;
+                    cursor: pointer;
+
+                    a{
+                        padding: 10px;
+                        margin-left: 10px ;
+                        display: block;
+                        width: 100%;
+                    }
+
+                    svg{
+                        font-size: 30px;
+                        position: relative;
+                        top: 5px;
+                    }
+
+                }
+
+                li:hover{
+                    background-color: #cccccc5c;
+                     border-radius: 10px;
+                }
+
+            }
+        }
+    }
+
+    .manage__main{
+        border: 1px solid aqua;
+        width: 85%;
+
+        .header{
+            border: 1px solid #cccccc7c;
+            height: 70px;
+            line-height: 70px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+
+            .logo{
+                width: 20%;
+                font-size: 20px;
+                font-weight: bold;
+                color: #ff5858;
+            }
+
+            .search{
+                width: 50%;
+
+                input{
+                    padding: 10px 10px;
+                    width: 70%;
+                }
+            }
+
+            .acc{
+                position: relative;
+                svg{
+                    font-size: 30px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+    } 
+    
+    .container{
+        margin: 20px;
+        
+        .container-main{
+            background-color: #fff;
+            border-radius: 5px;
+
+            .title{
+                padding-top: 20px;
+
+                h1{
+                    text-align: center;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                }
+
+                a{
+                   border-radius: 5px;
+                    padding: 10px 10px;
+                    background-color: rgb(46, 214, 46);
+                    color: #fff;
+
+                    svg{
+                        position: relative;
+                        top: 5px;
+                        font-size: 20px;
+                    }
+                }
+
+                a:hover{
+                    background-color: rgba(46, 214, 46, 0.759);
+                }
+            }
+
+            .detail-website{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+
+                .btn{
+                    a:hover, .btn-delete:hover{
+                        background-color: rgba(204, 204, 204, 0.776);
+                    }
+    
+                    
+                    .btn-detail{
+                        background-color: var(--main-color);
+                        color: white;
+                        padding: 2px 10px;
+                        border-radius: 10px;
+                        
+                    }
+
+                    .btn-delete{
+                        background-color: #cf0606;
+                        color: white;
+                        padding: 2px 10px;
+                        border-radius: 10px;
+                        border: none;
+                        
+                    }
+
+                    span{
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }   
+}
