@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Input, TextField } from '@mui/material';
-import { AccountCircle, Search, ShoppingCart } from '@mui/icons-material';
+import { AccountCircle, ShoppingCart } from '@mui/icons-material';
 import './styles.scss'
 import '../../mainColor/color.scss'
 import { Link } from 'react-router-dom';
+import SearchIcon from '@mui/icons-material/Search';
 
 Header.propTypes = {
 
@@ -26,7 +27,11 @@ function Header(props) {
 
                     <div className="search">
                         <input placeholder='Tìm kiếm...'></input>
-                        <Search className='search-icon'></Search>
+                        {/* <Search className='search-icon'></Search> */}
+                        <div className="search-icon">
+                            <SearchIcon className='search-icon_items'></SearchIcon>
+
+                        </div>
                     </div>
 
                     <div className="acc__cart">

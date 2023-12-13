@@ -23,7 +23,8 @@ const initalState = {
 
 function AddUser(props) {
     const [state, setState] = useState(initalState);
-    const { email, fullName, addres, phone, dob, avt, roles } = state;
+
+    const { email, fullName, address, phone, dob, avt, roles } = state;
 
     const addUser = async (state) => {
         try {
@@ -37,12 +38,14 @@ function AddUser(props) {
     const handleInput = (e) => {
         let { name, value } = e.target;
         setState({ ...state, [name]: value });
+
     };
 
     const handelSubmit = (e) => {
         addUser(state);
         // e.preventDefault();
     };
+
     return (
         <div className="manage-user">
             <div className="manage__category">
@@ -145,7 +148,7 @@ function AddUser(props) {
                                                         size="small"
                                                         name="address"
                                                         onChange={handleInput}
-                                                        value={addres}
+                                                        value={address}
                                                     ></TextField>
                                                 </div>
 

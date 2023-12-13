@@ -69,8 +69,10 @@
                 background-color: var(--main-color);
                 color: #fff;
                 position: relative;
-                padding: 8px 15px;
                 cursor: pointer;
+                padding: 8px 10px;
+                border: 1px solid var(--main-color);
+                
             }
 
             .search-icon:hover{

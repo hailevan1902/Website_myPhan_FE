@@ -55,7 +55,7 @@ function Product() {
                 <Container>
                     <Grid container className='flashsales__container'>
 
-                        <Grid xs={12} md={5} lg={3} className='flashsale-4'>
+                        <Grid xs={12} md={5} lg={2} className='flashsale-4'>
                             <div className="category">
 
                                 <div className="category__product-type">
@@ -135,7 +135,7 @@ function Product() {
                             </div>
                         </Grid>
 
-                        <Grid container xs={12} md={7} lg={9} className='flashsale-9'>
+                        <Grid container xs={12} md={7} lg={10} className='flashsale-9'>
                             {/* ddaay nhes t call cho m rooif ddaasy  chia component rooif truyeefn vafo nhes */}
                             {product?.map((item) => (
 

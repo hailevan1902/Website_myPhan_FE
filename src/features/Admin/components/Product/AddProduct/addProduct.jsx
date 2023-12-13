@@ -209,17 +209,11 @@ function AdminAddProduct(props) {
                                                 <div className="img1">
                                                     <p>Ảnh1 :</p>
 
-                                                    <input type="file" onChange={handleImageUpload} />
-
                                                     <TextField
-                                                        fullWidth
-                                                        size="small"
-                                                        className="description"
-                                                        onChange={handleInput}
+                                                        type="file"
                                                         name="img1"
-                                                        value={
-                                                            selectedImage
-                                                        }
+                                                        onChange={handleInput}
+                                                        value={img1}
                                                     ></TextField>
 
                                                 </div>

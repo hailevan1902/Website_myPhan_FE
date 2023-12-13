@@ -28,8 +28,6 @@ import Order from './features/Order/order';
 
 
 
-
-
 function App() {
 
 
@@ -40,7 +38,8 @@ function App() {
       <BrowserRouter>
         {/* <Header /> */}
         <Routes>
-          <Route path='/' element={<Home></Home>} ></Route>
+          <Route path='/' element={<Home></Home>}></Route>
+          {/* <Route path='/' element={<Test></Test>}></Route> */}
           <Route path='/login' element={<Login />}></Route>
           <Route path='/register' element={<Register />}></Route>
           <Route path='/product-hale' element={<Product />}></Route>
@@ -51,18 +50,14 @@ function App() {
           <Route path='/news-hale' element={<News />}></Route>
           <Route path='/order-product' element={<Order />}></Route>
 
-
           <Route path='*' element={<NotFound></NotFound>}></Route>
 
           <Route path='/manager-login' element={<LoginAdmin />}></Route>
-          <Route path='/manager' element={<Admin />}></Route>
+          <Route path='/manager' element={<Admin/>}></Route>
 
           <Route path='/admin-user' element={<UserAdmin />}></Route>
           <Route path='/admin-add-user' element={<AddUser />}></Route>
-          <Route
-            path="/admin-detail-user/:id"
-            element={<AdminDetailUser />}
-          ></Route>
+          <Route path="/admin-detail-user/:id" element={<AdminDetailUser />}></Route>
 
           <Route path='/admin-product' element={<ProductAdmin />}></Route>
           <Route path='/admin-add-product' element={<AdminAddProduct />}></Route>

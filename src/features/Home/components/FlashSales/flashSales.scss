@@ -1,0 +1,136 @@
+.flash_sales{
+    
+    .flash_sales-title{
+        margin-bottom: 10px;
+        .fls_bgr{
+            background-color: var(--main-color);
+            height: 50px;
+            width: 24.5%;
+            border-radius: 0 50px 0 0;
+
+            .fls_text{
+                text-transform: uppercase;
+                line-height: 50px;
+                color: var(--white-color);
+                padding-left: 10px;
+            }
+        }
+
+        
+    }
+
+    .category{
+        background-image: url(../../../../assets/img/banner4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;;
+        transition: 0.1s;
+        height: 100%;
+        width: 100%;
+    }
+
+    .list{
+
+        .fls_items{
+            
+            .list-product{
+                border: 1px solid #d8d6d689;
+                padding: 5px;
+                animation: linear 0.5s;
+                border-radius: 10px;
+                background-color: var(--white-color);
+                cursor: pointer;
+
+                .img_fls{
+                    height: 250px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .title_fls{
+                    text-align: justify;
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px ;
+
+                    p{
+                        display: block;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;  /* số dòng hiển thị */
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: var(--main-color);
+                    }
+                }
+
+                .title_fls:hover > p{
+                    color: var(--hover-color);
+                }
+
+                .price_fls{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 6px 0;
+    
+                    .newprice{
+                        color: var(--logo-color);
+                        font-weight: 550;
+                    }
+    
+                    .old-price{
+                        text-decoration: line-through;
+                        color: #ccc;
+                    }
+                }
+
+                .button_fls{
+                    margin-top: 11px;
+                    text-align: center;
+                    border: 2px solid var(--main-color);
+                    border-radius: 20px;
+                    padding: 8px 15px;
+
+                    a{
+                        padding: 5px 40px;
+                        color: var(--logo   -color);
+                        font-weight: 500;
+                    }
+                }
+
+                .button_fls:hover , .button_fls:hover > a{
+                    background-color: var(--main-color);
+                    color: var(--white-color);
+                }
+            }
+
+        }
+
+        .fls_items:hover > .list-product{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+        }
+
+        .button_all_fls{
+            text-align: center; 
+            padding: 8px 20px;
+            
+            
+            a{
+                padding: 8px 30px;
+                color: var(--logo-color);
+                font-weight: 500;
+                border: 1px solid var(--main-color);
+                color: var(--main-color);
+
+            }
+
+            a:hover{
+                background-color: var(--main-color);
+                color: var(--white-color);
+            }
+        }
+
+    }
+}

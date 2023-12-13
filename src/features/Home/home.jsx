@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Cached, CardGiftcard, ChevronRight, LocalShipping, Support, SupportAgent } from '@mui/icons-material';
 import './home.scss'
-import { Container, Grid } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -16,6 +16,9 @@ import c from '../../assets/img/fls3jpg.jpg'
 import d from '../../assets/img/fls4.jpg'
 import e from '../../assets/img/fls5.jpg'
 import f from '../../assets/img/fls6.jpg'
+import FlashSales from './components/FlashSales/flashSales';
+import BannerSmall from './components/BannerSmall/BannerSmall';
+
 
 
 function Home() {
@@ -56,7 +59,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="flashsales">
+                {/* <div className="flashsales">
                     <Container>
                         <div className="flashsales__title">
                             <p>Sản phẩm bán chạy</p>
@@ -66,7 +69,7 @@ function Home() {
                         <div className="hr"></div>
 
                         <Grid container className='flashsales__container'>
-                            <Grid xs={12} md={5} lg={3} className='flashsale-4'>
+                            <Grid xs={6} md={5} lg={3} className='flashsale-4'>
                                 <div className="img"></div>
                             </Grid>
 
@@ -263,9 +266,11 @@ function Home() {
 
                         </div>
                     </Container>
-                </div>
+                </div> */}
 
-                <div className="banner-small">
+                <FlashSales></FlashSales>
+
+                {/* <div className="banner-small">
                     <Container className='banner-container'>
                         <div className="banner1">
                             <img src={bannersmall1} alt="" />
@@ -274,7 +279,9 @@ function Home() {
                             <img src={bannersmall2} alt="" />
                         </div>
                     </Container>
-                </div>
+                </div> */}
+
+                <BannerSmall></BannerSmall>
 
                 <div className="new-product">
                     <Container>
@@ -286,6 +293,7 @@ function Home() {
                         <div className="hr"></div>
 
                         <Grid container className='flashsales__container'>
+
                             <Grid xs={12} md={5} lg={3} className='flashsale-4'>
                                 <div className="img"></div>
                             </Grid>

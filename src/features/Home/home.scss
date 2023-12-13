@@ -43,6 +43,7 @@
 
     .flashsales{
         margin-top: 30px;
+        padding: 0;
         .flashsales__title{
             text-align: center;
             margin-bottom: 15px;
@@ -70,6 +71,7 @@
         }
 
         .flashsales__container{
+
             .flashsale-4{
                 margin-bottom: 10px;
 
@@ -231,26 +233,13 @@
         }
     }
 
-    .banner-small{  
-        margin-top: 30px;
-        .banner-container{
-            display: flex;
-            height: 250px;
-            justify-content: space-between;
-            
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            .banner1{
-                width: 49%;
-            }
+    // .flash_sales{
+    //     .container{
+    //         border: 1px solid red;
+    //         height: 500px;
+    //     }
+    // }
 
-            .banner2{
-                width: 49%;
-            }
-        }
-    }
 
     .new-product{
         margin-top: 50px;
